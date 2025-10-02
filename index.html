@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mortal Kombat - Demo</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container" role="main">
+<header>
+<div class="logo">MK</div>
+<div>
+<h1>Mortal Kombat — Demo interactiva</h1>
+<p class="lead">Selecciona 2 luchadores y presiona <strong>Fight!</strong> para ver un combate simulado (sin violencia gráfica).</p>
+</div>
+</header>
+
+<div class="arena">
+<section>
+<h2 style="font-size:14px;margin:0 0 8px 0;color:var(--muted)">Rostro</h2>
+<div class="roster" id="roster"></div>
+</section>
+
+<aside class="panel" aria-label="Arena de combate">
+<div class="stage" id="stage">
+<div class="fighter left" id="fighterA" aria-hidden="true">
+<div class="face" id="faceA">A</div>
+<div class="name" id="nameA">—</div>
+</div>
+<div class="vs">VS</div>
+<div class="fighter right" id="fighterB" aria-hidden="true">
+<div class="face" id="faceB">B</div>
+<div class="name" id="nameB">—</div>
+</div>
+</div>
+
+<div style="display:flex;gap:8px;align-items:center;justify-content:space-between">
+<div class="controls">
+<button class="btn-neutral" id="randomBtn">Seleccionar aleatorio</button>
+<button class="btn-danger" id="fightBtn">Fight!</button>
+</div>
+<div id="score" style="min-width:120px;text-align:right;color:var(--muted)">Elige dos luchadores</div>
+</div>
+
+<div id="resultBox" style="margin-top:10px"></div>
+
+<footer>
+<span>Hecho con ❤️ — Demo</span>
+<span style="color:var(--muted)">No oficial</span>
+</footer>
+</aside>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
